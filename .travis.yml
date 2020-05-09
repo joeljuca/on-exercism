@@ -1,0 +1,7 @@
+language: minimal
+
+jobs:
+  include:
+    - language: erlang
+      otp_release: 22.3
+      script: ./test erlang
