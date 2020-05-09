@@ -1,2 +1,7 @@
+# erlang
+_build
+*.beam
+
+# python
 .pytest_cache
 __pycache__
