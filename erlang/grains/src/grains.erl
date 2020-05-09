@@ -2,12 +2,10 @@
 
 -export([square/1, total/0]).
 
-square(Square) when Square < 1 ->
+square(Square) when Square < 1 orelse Square > 64 ->
     {error, "square must be between 1 and 64"};
 square(1) -> 1;
-square(Square) when Square < 65 ->
-    round(math:pow(2, Square - 1));
-square(_) -> {error, "square must be between 1 and 64"}.
+square(Square) -> round(math:pow(2, Square - 1)).
 
 cb_grains(1) -> 1;
 cb_grains(Squares) ->
