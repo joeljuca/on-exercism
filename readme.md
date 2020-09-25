@@ -6,6 +6,7 @@ My adventures on [Exercism](https://exercism.io).
 
 ## Languages
 
+- [Elixir](elixir)
 - [Erlang](erlang)
 - [Go](go)
 - [JavaScript](javascript)
